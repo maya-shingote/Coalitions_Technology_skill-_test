@@ -1,0 +1,538 @@
+/* Bebas Neue*/
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@700&family=Barlow+Condensed&family=Barlow:ital@1&family=Noto+Sans&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --primary-color: #414f6b;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0);
+  padding-left: var(--bs-gutter-x, 0);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* End of Common Styles */
+
+/* Section 1 */
+.section-1 {
+  width: auto;
+  min-height: 300px;
+  background: url("/imges/1\ big\ img.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  background-size: cover !important;
+  min-height: 1000px;
+}
+
+.logo {
+  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  left: 20%;
+  transition: transform 0.5s;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.navbar {
+  position: absolute !important;
+  top: 1rem;
+  right: 16%;
+}
+
+.navbar-link {
+  font-size: 1.5rem;
+  display: inline-block;
+  justify-content: space-evenly;
+  margin: 0 3rem;
+  color: var(--white-color);
+  transition: transform 0.5s;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid var(--white-color);
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+
+.logo:hover,
+.navbar-link:hover {
+  transform: scale(1.2);
+  color: var(--white-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* End of Section 1 */
+
+/*sticky nav */
+.sticky-nav {
+  height: 6.7rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.logo2 {
+  position: absolute;
+  top: 1rem;
+  left: 20%;
+  transition: transform 0.5s;
+}
+
+.navbar-link2 {
+  font-size: 1.5rem;
+  display: inline-block;
+  justify-content: space-evenly;
+  margin: 0 3rem;
+  color: var(--primary-color);
+  transition: transform 0.5s;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid var(--primary-color);
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  background: none !important;
+}
+
+.navbar2 {
+  position: absolute;
+  top: 2rem;
+  right: 16%;
+}
+
+.logo2:hover,
+.navbar-link2:hover {
+  transform: scale(1.2);
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* End of sticky Nav */
+
+/*history 2nd nav*/
+#history {
+  width: 100%;
+  background-size: cover !important;
+  background: url("/imges/2nd\ image.png") no-repeat;
+  min-height: 50px;
+  --bs-scroll-height: 100px;
+}
+
+#history div.textarea {
+  height: 1000px;
+}
+
+#history div.textarea,
+#team div.textarea,
+#team ul.textarea {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#team ul.textarea {
+  list-style: none;
+  display: inline-block;
+}
+
+div.itemnumber {
+  width: 100%;
+  height: 250px;
+  clear: both;
+}
+div.number {
+  font-family: "Oswald";
+  font-weight: bold;
+  color: #70809b;
+  font-size: 135px;
+  z-index: 1;
+  float: left;
+}
+
+div.subtitle {
+  font-family: "Oswald";
+  font-weight: regular;
+  color: #414f6b;
+  font-size: 32px;
+  float: right;
+  margin-left: -20px;
+  margin-top: 90px;
+  z-index: 2;
+}
+
+
+/* Section 2 */
+
+.section-2 {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.history-text-section {
+  width: 62%;
+}
+
+.history {
+  margin-top: 5rem;
+}
+
+.history-text {
+  flex-direction: column;
+  width: 94%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  left: 10%;
+  margin-left: 6rem;
+}
+
+.numbers {
+  left: 20%;
+}
+
+/*for carousel*/
+.carousel-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: rgba(65, 79, 107, 0.85);
+  bottom: 0;
+  padding: 3rem;
+}
+
+.carousel-item a {
+  cursor: default;
+}
+
+.thumb-container {
+  position: relative;
+  width: 67%;
+}
+
+.thumbnail {
+  margin: 0 0.3rem;
+}
+
+.thumbnail img {
+  height: 80%;
+  width: 100%;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -20%;
+}
+
+.blog .carousel-indicators:hover {
+  cursor: pointer;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+  background: rgba(231, 231, 231, 0.3);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: var(--white-color);
+}
+
+/*2nd climb section*/
+
+#team div.textarea,
+#team ul.textarea {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#team ul.textarea {
+  list-style: none;
+  display: inline-block;
+}
+
+
+
+#team ul.textarea li.teamtext {
+  padding-top: 80px;
+}
+
+/*last footer page*/
+
+nav.sec5nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  text-transform: uppercase;
+  color: #b0b4be;
+  font-weight: bold;
+}
+nav.sec5nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #b0b4be;
+  color: #414f6b;
+  text-decoration: underline;
+}
+
+div.schedule {
+  margin-left: 17% !important;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 600px;
+}
+
+div.schedule h2 {
+  font-family: "Oswald";
+  font-weight: bold;
+  color: #414f6b;
+}
+
+div.schedule ul {
+  list-style: none;
+}
+
+div.schedule ul li {
+  margin: 6px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+div.schedule ul li ul {
+  display: block;
+}
+
+div.schedule ul li ul li {
+  width: 50%;
+  float: left;
+}
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#nav-mt1 {
+  background: url("/imges/3\ img.png") no-repeat;
+  padding-top: 100px;
+  min-height: 538px;
+  background-position-y: -300px !important;
+}
+
+#nav-mt2 {
+  background: url("/imges/img21414.png") no-repeat;
+  padding-top: 100px;
+  min-height: 538px;
+  background-position-y: -150px !important;
+}
+
+/*mtpart*/
+
+#sec5 {
+  background-color: #414f6b;
+  min-height: 0px;
+}
+
+nav.sec5nav {
+  padding-left: 15%;
+}
+
+nav.sec5nav {
+  background-color: #414f6b;
+  font-family: "Oswald";
+}
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+nav.sec5nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  text-transform: uppercase;
+  color: #b0b4be;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+  background-color: 15s ease-in-out;
+  border-color: 15s ease-in-out;
+}
+
+nav.sec5nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  text-transform: uppercase;
+  color: #b0b4be;
+  font-weight: bold;
+}
+nav.sec5nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #b0b4be;
+  color: #414f6b;
+  text-decoration: underline;
+ 
+}
+
+/*footer start*/
+footer {
+  background-color: #414f6b;
+  color: #63769d;
+  padding: 10px;
+  min-height: 80px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin: 6px 0;
+  display: inline-block;
+}
+footer ul li:first-child {
+  width: 35%;
+  margin-left: 15%;
+}
+footer ul li:last-child {
+  width: 35%;
+  text-align: right;
+  margin-right: 15%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Mobile  */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  section#sec1,
+  section#sec2,
+  section#history,
+  section#team,
+  section#sec5,
+  #nav-mt1,
+  #nav-mt2 {
+    background-size: cover !important;
+  }
+  section#sec1 {
+    min-height: 800px !important;
+  }
+  div.schedule {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg-light {
+    background-color: #414f6b !important;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+  }
+
+  section#sec1 {
+    min-height: 300px;
+  }
+
+  section#sec2 {
+    min-height: 70px;
+  }
+
+  section#team ul li.teamtext {
+    width: 100%;
+  }
+
+  #history {
+    background-position-y: -200px !important;
+    height: 700px;
+  }
+  .footer-logo {
+    left: 5%;
+  }
+
+  #history div.textarea {
+    height: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  div.schedule {
+    width: 98%;
+    margin: 1% !important;
+    
+  }
+
+  #nav-mt1,
+  #nav-mt2 {
+    min-height: 500px;
+    background-position-y: 0 !important;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+
+  footer ul li {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    text-align: center !important;
+    padding: 12px !important;
+    margin: 0 !important;
+  }
+}
